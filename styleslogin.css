@@ -1,0 +1,82 @@
+body {
+    background:url(login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    margin-top: 9rem;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+}
+#lgbtn{
+background-color: darkgreen;
+color: aqua;
+}
+#lgbtn:hover {
+    border: none;
+    background-color:#00d27f;
+    box-shadow: 0 0 20px rgba(0, 210, 127, 0.5);
+    transition-duration: 1ms;
+}
+#lgbtn:active{
+background-color:#74d600;
+box-shadow : 0 0 40px rgba(0, 210, 127, 0.5);;
+transition-duration: 1ms;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 0 2px;
+}
+.remember-forgot a{
+    color:darkblue ;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.register{
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+.wrapper{
+    display: flex;   
+}
+#card{
+    background: transparent;
+  border: 2px solid rgba(255, 255, 255,0);
+  backdrop-filter: blur(40px 40px);
+  color:#1A3315;
+  font-weight: bolder;
+  padding: none;
+}
+.form-group input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0,0.4);
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+#cardbox{
+    background-color:rgba(250, 250, 250,0.5);
+}
+.register a{
+    color: darkblue;
+}
+h4{
+    font-weight: bold;
+}
+#username,#loginPassword{
+    background-color:rgba(177, 228, 237, 0.4);
+}
+ 

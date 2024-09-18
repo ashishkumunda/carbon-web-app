@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carbon mine Calculator</title>
+    <link rel="stylesheet" href="newcalci.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mine Carbon Footprint Calculator</h1>
+
+        <div class="section-title"><h2>Energy Use</h2></div>
+        <div class="input-group">
+            <label for="electricity-consumption">Electricity Consumption (kWh):</label>
+            <input type="number" id="electricity-consumption" placeholder="e.g., 50000">
+            <label for="co2-intensity-electricity">CO2 Intensity of Electricity (kg CO2/kWh):</label>
+            <input type="number" id="co2-intensity-electricity" placeholder="e.g., 0.5">
+        </div>
+
+        <div class="section-title"><h2>Fuel Consumption</h2></div>
+        <div class="input-group">
+            <label for="diesel-consumption">Diesel Consumption (liters):</label>
+            <input type="number" id="diesel-consumption" placeholder="e.g., 2000">
+            <label for="co2-intensity-diesel">CO2 Intensity of Diesel (kg CO2/liter):</label>
+            <input type="number" id="co2-intensity-diesel" placeholder="e.g., 2.6">
+        </div>
+
+        <div class="section-title"><h2>Ventilation</h2></div>
+        <div class="input-group">
+            <label for="ventilation-energy-consumption">Ventilation Energy Consumption (kWh):</label>
+            <input type="number" id="ventilation-energy-consumption" placeholder="e.g., 10000">
+            <label for="co2-intensity-ventilation">CO2 Intensity of Ventilation Energy (kg CO2/kWh):</label>
+            <input type="number" id="co2-intensity-ventilation" placeholder="e.g., 0.8">
+        </div>
+
+        <div class="section-title"><h2>Processing and Refining</h2></div>
+        <div class="input-group">
+            <label for="processing-energy-consumption">Processing Energy Consumption (kWh):</label>
+            <input type="number" id="processing-energy-consumption" placeholder="e.g., 30000">
+            <label for="co2-intensity-processing">CO2 Intensity of Processing Energy (kg CO2/kWh):</label>
+            <input type="number" id="co2-intensity-processing" placeholder="e.g., 0.5">
+        </div>
+
+        <button class="calculate-btn" onclick="calculateCarbonFootprint()">Calculate</button>
+
+        <div class="results" id="results">
+            Carbon Footprint Results<br>
+            Total Emissions: 0 kg CO2
+        </div>
+    </div>
+    <script src="newcalci.js"></script>
+</body>
+</html>

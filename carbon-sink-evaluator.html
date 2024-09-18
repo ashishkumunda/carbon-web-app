@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Sink Evaluator</title>
+    <link rel="stylesheet" href="stylescse.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="app-container">
+        <h1>Carbon Sink Evaluator for Coal Mines</h1>
+        
+        <form id="carbonSinkForm">
+            <!-- Forest Carbon Sink -->
+            <fieldset>
+                <legend>Forest Carbon Sink</legend>
+                <label for="forestArea">Area of Forest (hectares):</label>
+                <input type="number" id="forestArea" placeholder="Enter forest area in hectares" required>
+                
+                <label for="treeDensity">Average Tree Density (trees per hectare):</label>
+                <input type="number" id="treeDensity" placeholder="Enter tree density" required>
+                
+                <label for="carbonPerTree">Average Carbon Sequestration per Tree (kg/tree):</label>
+                <input type="number" id="carbonPerTree" placeholder="Enter carbon per tree" required>
+            </fieldset>
+
+            <!-- Soil Carbon Sink -->
+            <fieldset>
+                <legend>Soil Carbon Sink</legend>
+                <label for="soilArea">Area of Soil (hectares):</label>
+                <input type="number" id="soilArea" placeholder="Enter soil area in hectares" required>
+                
+                <label for="carbonPerHectare">Average Carbon Sequestration per Hectare (tons/hectare):</label>
+                <input type="number" id="carbonPerHectare" placeholder="Enter carbon per hectare" required>
+            </fieldset>
+
+            <!-- Button to Calculate -->
+            <button type="button" onclick="calculateCarbonSink()">Evaluate Carbon Sink</button>
+        </form>
+
+        <div class="result">
+            <h2>Results:</h2>
+            <p id="totalCarbonSink"></p>
+        </div>
+    </div>
+
+    <script src="scriptcse.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

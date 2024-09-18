@@ -1,0 +1,44 @@
+carbon-neutrality<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathways to Carbon Neutrality</title>
+    <link rel="stylesheet" href="stylescn.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="app-container">
+        <h1>Discover Pathways to Carbon Neutrality</h1>
+        
+        <form id="carbonNeutralityForm">
+            <!-- Carbon Emissions Input -->
+            <fieldset>
+                <legend>Carbon Emissions Data</legend>
+                <label for="totalEmissions">Total Carbon Emissions (tons of CO2 per year):</label>
+                <input type="number" id="totalEmissions" placeholder="Enter total emissions" required>
+            </fieldset>
+
+            <!-- Carbon Sink Data Input -->
+            <fieldset>
+                <legend>Carbon Sink Data</legend>
+                <label for="forestSink">Carbon Sequestration from Forests (tons of CO2 per year):</label>
+                <input type="number" id="forestSink" placeholder="Enter forest carbon sink" required>
+                
+                <label for="soilSink">Carbon Sequestration from Soil (tons of CO2 per year):</label>
+                <input type="number" id="soilSink" placeholder="Enter soil carbon sink" required>
+            </fieldset>
+
+            <!-- Button to Calculate -->
+            <button type="button" onclick="calculateCarbonNeutrality()">Calculate Pathways</button>
+        </form>
+
+        <div class="result">
+            <h2>Results:</h2>
+            <p id="netCarbonBalance"></p>
+            <p id="neutralitySuggestions"></p>
+        </div>
+    </div>
+
+    <script src="scriptcn.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

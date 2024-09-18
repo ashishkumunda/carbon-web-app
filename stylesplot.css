@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:darkturquoise;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:azure;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    border: 1px solid black;
+    display: block;
+    margin: 20px auto;
+}
+
+.dropdown-container {
+    text-align: center;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid ma;
+}
+.header{
+    text-align: center;
+    justify-content: center;
+}
+.scatterplot,.histogram,.piechart h2{
+    color:black;
+    text-decoration: double;
+}

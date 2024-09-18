@@ -1,0 +1,358 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Section Styling */
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Navbar animation on scroll */
+}
+
+.header.scrolled {
+  background-color: rgba(51, 51, 51, 0.8); /* Change background on scroll */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  animation: pulse 2s infinite; /* Pulse effect on logo */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Styling for Login and Sign Up buttons */
+.login-btn, .signup-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #000000; /* Black for Login */
+}
+
+.signup-btn {
+  background-color: #ffffff; /* White for Sign Up */
+  color: black !important; /* Explicitly setting text color to black */
+  border: 1px solid #000; /* Optional: Adding a border to make it more visible */
+  margin-left: 10px; /* Space between Login and Sign Up */
+}
+
+.login-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.signup-btn:hover {
+  background-color: #989898; /* Darker grey on hover */
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Keep the smaller height for the hero section */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Fill the full height of the hero section */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%; /* Image fills the entire container */
+  object-fit: cover; /* Ensure the image covers the entire container without stretching */
+  transition: transform 0.5s ease; /* Zoom effect */
+}
+
+.hero-image-container:hover .hero-image {
+  transform: scale(1.1); /* Zoom-in effect on hover */
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translateY(-40%);
+  color: white;
+  text-align: left;
+  max-width: 900px;
+  padding: 15px;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text h2 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  margin: 5px;
+  padding: 15px 30px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  transition: opacity 0.3s ease;
+}
+
+.hero .get-started {
+  background-color: #28a745;
+}
+
+.hero .sign-in {
+  background-color: #17a2b8;
+}
+
+.hero button:hover {
+  opacity: 0.8;
+}
+
+/* Content Section */
+.content {
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  text-align: center;
+  font-size: 28px;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Fade-in animation */
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Steps Section Styling */
+.steps-section a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.steps-section a:hover {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 100px;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.steps-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.central-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.step {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.step-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.step-text h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.step-text p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    grid-template-columns: 2fr;
+    gap: 50px;
+  }
+
+  .steps-column, .central-image {
+    text-align: center;
+    padding: 0;
+  }
+
+  .central-image {
+    margin: 100px 0;
+  }
+}
+
+/* Solutions Section */
+.solutions-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.solution-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
+
+/* Footer Styling */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* Fade-in effect for footer */
+}
+
+footer.visible {
+  opacity: 1;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-nav {
+  flex: 1;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact {
+  flex: 1;
+}

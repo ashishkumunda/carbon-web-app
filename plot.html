@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carbon emission Plot</title>
+  <link rel="stylesheet" href="stylesplot.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Carbon footprint visualizer</h1>
+        
+        <!-- Dropdown menu for year selection -->
+        <div class="dropdown-container">
+            <label for="yearSelect">Select Year: </label>
+            <select id="yearSelect">
+                <option value="2023">2023</option>
+                <option value="2024" selected>2024</option>
+            </select>
+        </div>
+        
+        <div>
+            <h2>Pie Chart</h2>
+            <canvas id="pieChart" width="400" height="400"></canvas>
+        </div>
+        
+        <div>
+            <h2>Scatter Plot</h2>
+            <canvas id="scatterPlot" width="400" height="400"></canvas>
+        </div>
+        
+        <div>
+            <h2>Histogram</h2>
+            <canvas id="histogram" width="400" height="400"></canvas>
+        </div>
+    </div>
+    
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="plot.js"></script>
+</body>
+</html>

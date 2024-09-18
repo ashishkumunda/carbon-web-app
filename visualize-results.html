@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Results and Track Progress</title>
+    <link rel="stylesheet" href="stylesvr.css"> <!-- Link to your CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js library -->
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Carbon Neutrality Dashboard</h1>
+
+        <!-- Chart Section -->
+        <div class="chart-container">
+            <canvas id="emissionChart"></canvas>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-container">
+            <h2>Progress Towards Carbon Neutrality</h2>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+            <p id="progressPercentage"></p>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
